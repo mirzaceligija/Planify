@@ -9,7 +9,7 @@
     "build": "nx run-many --target=build --projects=planify-customer,planify-admin --parallel",
     "build:prod": "npm run build -- --configuration=production",
     "clean":"rimraf ./dist",
-    "test": "nx run-many --target=test --projects=planify-customer,planify-admin --parallel",
+    "test": "nx run-many --target=test --projects=planify-customer,planify-admin,shared --parallel",
     "help": "nx help"
   },
   "private": true,
