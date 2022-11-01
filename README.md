@@ -92,11 +92,11 @@ To start development server, you need to clone the repository and install depend
 git clone https://github.com/mirzaceligija/Planify.git
 cd planify
 npm i
-nx serve -o
+npm start
 ```
 
-Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-If you get any errors, make sure that nothing is running on the port 4200.
+Navigate to `http://localhost:4200/` for the customer portal and `http://localhost:4201/` for the admin portal. The app will automatically reload if you change any of the source files.
+If you get any errors, make sure that nothing is running on the ports 4200 and 4201.
 
 
 ### Build
@@ -104,14 +104,30 @@ If you get any errors, make sure that nothing is running on the port 4200.
 The build artifacts will be stored in the `dist/` directory. To build the project run:
 
 ```bash
-nx build
+npm run build
 ```
 
+### Build:Production
+
+The build artifacts will be stored in the `dist/` directory. To build the project run:
+
+```bash
+npm run build:prod
+```
 
 ### Running unit tests
 
-To execute the unit tests via [Karma](https://karma-runner.github.io) run:
+To execute the unit test run:
 
 ```bash
-nx test
+npm run test
+```
+
+
+### Clean
+
+To remove generated files in the `dist/` directory run:
+
+```bash
+npm run clean
 ```

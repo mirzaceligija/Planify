@@ -1,13 +1,16 @@
 {
   "name": "planify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js",
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "start": "nx run-many --target=serve --projects=planify-customer,planify-admin --parallel",
+    "build": "nx run-many --target=build --projects=planify-customer,planify-admin --parallel",
+    "build:prod": "npm run build -- --configuration=production",
+    "clean":"rimraf ./dist",
+    "test": "nx run-many --target=test --projects=planify-customer,planify-admin --parallel",
+    "help": "nx help"
   },
   "private": true,
   "dependencies": {
