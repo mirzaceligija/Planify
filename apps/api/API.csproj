@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  
+  <PropertyGroup>
+    
+    <TargetFramework>net6.0</TargetFramework>
+    
+    <Nullable>enable</Nullable>
+    
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <UserSecretsId>5b053e11-73f6-4a30-b4d0-ba7a1fa25b85</UserSecretsId>
+    
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    
+    <DockerfileContext>.</DockerfileContext>
+    
+    <OutputPath>../../dist/apps/API</OutputPath>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1"/>
+    
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3"/>
+    
+  </ItemGroup>
+  
+  <Target Name="CheckNxModuleBoundaries" BeforeTargets="Build">
+    
+    <Exec Command="node ../../node_modules/@nx-dotnet/core/src/tasks/check-module-boundaries.js -p api"/>
+    
+  </Target>
+</Project>
