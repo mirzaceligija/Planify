@@ -8,12 +8,12 @@
     
     <Nullable>enable</Nullable>
     
-    <OutputPath>../../dist/libs/planify-application</OutputPath>
+    <OutputPath>../../dist/libs/planify.application</OutputPath>
   </PropertyGroup>
   
   <Target Name="CheckNxModuleBoundaries" BeforeTargets="Build">
     
-    <Exec Command="node ../../node_modules/@nx-dotnet/core/src/tasks/check-module-boundaries.js -p planify-application"/>
+    <Exec Command="node ../../node_modules/@nx-dotnet/core/src/tasks/check-module-boundaries.js -p planify.application"/>
     
   </Target>
 </Project>

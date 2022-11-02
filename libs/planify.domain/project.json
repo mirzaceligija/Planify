@@ -1,10 +1,10 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "name": "planify-application",
+  "name": "planify.domain",
   "targets": {
     "build": {
       "executor": "@nx-dotnet/core:build",
-      "outputs": ["dist/libs/planify-application"],
+      "outputs": ["dist/libs/planify.domain"],
       "options": {
         "configuration": "Debug",
         "noDependencies": true
