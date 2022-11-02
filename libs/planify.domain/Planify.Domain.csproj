@@ -13,7 +13,7 @@
   
   <Target Name="CheckNxModuleBoundaries" BeforeTargets="Build">
     
-    <Exec Command="node ../../node_modules/@nx-dotnet/core/src/tasks/check-module-boundaries.js -p planify.domain"/>
+    <Exec Command="node ../../node_modules/@nx-dotnet/core/src/tasks/check-module-boundaries.js -p planify.domain" />
     
   </Target>
 </Project>
