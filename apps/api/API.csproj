@@ -27,6 +27,8 @@
   
   <ItemGroup>
     <ProjectReference Include="..\..\libs\planify.application\Planify.Application.csproj" />
+    <ProjectReference Include="..\..\libs\planify.contracts\Planify.Contracts.csproj" />
+    <ProjectReference Include="..\..\libs\planify.infrastructure\Planify.Infrastructure.csproj" />
   </ItemGroup>
   
   <Target Name="CheckNxModuleBoundaries" BeforeTargets="Build">
