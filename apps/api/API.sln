@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planify.Domain", "..\..\lib
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planify.Infrastructure", "..\..\libs\planify.infrastructure\Planify.Infrastructure.csproj", "{5D1A5A6A-73F0-4994-BCA5-CFBF513A461A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planify.Contracts", "..\..\libs\Planify.Contracts\Planify.Contracts.csproj", "{A9E6DAC5-D495-4EF0-9B59-5EF7FC27B64F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{5D1A5A6A-73F0-4994-BCA5-CFBF513A461A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D1A5A6A-73F0-4994-BCA5-CFBF513A461A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D1A5A6A-73F0-4994-BCA5-CFBF513A461A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E6DAC5-D495-4EF0-9B59-5EF7FC27B64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E6DAC5-D495-4EF0-9B59-5EF7FC27B64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E6DAC5-D495-4EF0-9B59-5EF7FC27B64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E6DAC5-D495-4EF0-9B59-5EF7FC27B64F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{A874C214-F8B1-476B-A330-A118EDBEBAD1} = {FB66D376-43F3-4082-B69B-83EDAFBCBE80}
 		{A1CB2A0C-2297-4D69-B6F8-3C70683045C5} = {FB66D376-43F3-4082-B69B-83EDAFBCBE80}
 		{5D1A5A6A-73F0-4994-BCA5-CFBF513A461A} = {FB66D376-43F3-4082-B69B-83EDAFBCBE80}
+		{A9E6DAC5-D495-4EF0-9B59-5EF7FC27B64F} = {FB66D376-43F3-4082-B69B-83EDAFBCBE80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B24BA4EB-2022-47B7-850A-8DEBDC86E325}
