@@ -16,4 +16,8 @@
     <Exec Command="node ../../node_modules/@nx-dotnet/core/src/tasks/check-module-boundaries.js -p planify.domain" />
     
   </Target>
+  
+  <ItemGroup>
+    <PackageReference Include="ErrorOr" Version="1.0.1" />
+  </ItemGroup>
 </Project>

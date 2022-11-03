@@ -1,3 +1,5 @@
+using API.Common.Http;
+using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -90,7 +92,11 @@ namespace API.Errors
       }
 
       // This field is custom
-      problemDetails.Extensions.Add("devMessage", "Sorry");
+      var errors = httpContext?.Items[HttpContextItemKeys.Errors] as List<Error>;
+      if(errors != null)
+      {
+        problemDetails.Extensions.Add("errorCodes", errors.Select(e => e.Code));
+      }
     }
   }
 }
