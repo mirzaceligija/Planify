@@ -1,19 +1,13 @@
-using API.Errors;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
+using API;
 using Planify.Application;
 using Planify.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 {
-  builder.Services.AddControllers();
-
-  builder.Services.AddEndpointsApiExplorer();
-  builder.Services.AddSwaggerGen();
-
-  builder.Services.AddApplication();
-  builder.Services.AddInfrastructure();
-
-  builder.Services.AddSingleton<ProblemDetailsFactory, PlanifyProblemDetailsFactory>();
+  builder.Services
+    .AddApplication()
+    .AddInfrastructure()
+    .AddPresentation();
 }
 
 var app = builder.Build();
