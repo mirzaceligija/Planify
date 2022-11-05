@@ -1,3 +1,4 @@
+using Planify.Domain.Task.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Planify.Application.Tasks.Common
 {
-  public record TaskResult(int id, string name);
+  public record TaskResult(TaskId id, string name, string description);
 }

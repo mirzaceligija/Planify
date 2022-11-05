@@ -1,4 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
+using Planify.Application.Common.Interfaces.Persistance;
+using Planify.Infrastructure.Persistance;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,8 @@ namespace Planify.Infrastructure
     {
       public static IServiceCollection AddInfrastructure(this IServiceCollection services)
       {
-        return services;
+      services.AddScoped<ITasksRepository, TasksRepository>();
+      return services;
       }
     }
 }

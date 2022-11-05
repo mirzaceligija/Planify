@@ -9,5 +9,5 @@ using System.Threading.Tasks;
 
 namespace Planify.Application.Tasks.Commands.Create
 {
-  public record CreateTaskCommand(string name) : IRequest<ErrorOr<TaskResult>>;
+  public record CreateTaskCommand(string name, string description) : IRequest<ErrorOr<TaskResult>>;
 }

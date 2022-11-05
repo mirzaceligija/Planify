@@ -20,4 +20,8 @@
   <ItemGroup>
     <ProjectReference Include="..\planify.application\Planify.Application.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
 </Project>

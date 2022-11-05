@@ -12,6 +12,7 @@ namespace Planify.Application.Tasks.Commands.Create
     public CreateTaskCommandValidator()
     {
       RuleFor(x => x.name).NotEmpty();
+      RuleFor(x => x.description).NotEmpty();
     }
   }
 }

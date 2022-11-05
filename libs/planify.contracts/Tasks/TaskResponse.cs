@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Planify.Contracts.Tasks
 {
-  public record TaskResponse(int id, string name);
+  public record TaskResponse(int id, string name, string description);
 }

@@ -10,9 +10,9 @@ namespace API
     {
       services.AddControllers();
       services.AddEndpointsApiExplorer();
+      services.AddMappings();
       services.AddSwaggerGen();
       services.AddSingleton<ProblemDetailsFactory, PlanifyProblemDetailsFactory>();
-      services.AddMappings();
 
       return services;
     }

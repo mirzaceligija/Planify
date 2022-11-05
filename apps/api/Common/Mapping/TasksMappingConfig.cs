@@ -13,7 +13,6 @@ namespace API.Common.Mapping
       config.NewConfig<CreateTaskRequest, CreateTaskCommand>();
       config.NewConfig<GetTaskRequest, GetTaskQuery>();
       config.NewConfig<TaskResult, TaskResponse>();
-      config.NewConfig<GetTaskQuery, GetTaskRequest>();
     }
   }
 }
