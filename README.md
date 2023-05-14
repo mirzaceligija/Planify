@@ -16,6 +16,8 @@
 
 # Planify
 
+Note: This project is currently on hold.
+
 An app that allows users to plan their personal development process.
 
 Features:
